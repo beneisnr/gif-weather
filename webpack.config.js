@@ -60,6 +60,15 @@ module.exports = {
               name: '[name].[ext]',
             },
           },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              // disable: true,
+              webp: {
+                quality: 75,
+              },
+            },
+          },
         ],
       },
     ],
