@@ -1,0 +1,13 @@
+body, html {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to bottom, #b6f9f9 0%,#bcf6e7 40%,#beffed 100%);
+    height: 100%;
+}
+
+.logo {
+    background-image: url('img/logo.svg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
