@@ -1,24 +1,7 @@
-import $ from 'jquery';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './style.scss';
 
-class PageTimer {
-  constructor(start) {
-    this.elapsedTime = start;
-  }
+const App = () => <div className="test">All the REACT are belong to us!</div>;
 
-  startTimer() {
-    setInterval(() => {
-      this.displayTime();
-      this.elapsedTime += 1;
-    }, 1000);
-  }
-
-  displayTime() {
-    $('#main').html(
-      `You've been on this page for ${this.elapsedTime} seconds.`,
-    );
-  }
-}
-
-const pageTimer = new PageTimer(0);
-pageTimer.startTimer();
+ReactDOM.render(<App />, document.getElementById('main'));
