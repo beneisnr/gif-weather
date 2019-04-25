@@ -6,3 +6,4 @@
 * sass
 * react
 * react router
+* redux
