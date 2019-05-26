@@ -1,9 +1,2 @@
-# Frontend Starterpack
-
-* webpack
-* babel
-* eslint
-* sass
-* react
-* react router
-* redux
+# Gif Weather
+* [server repo](https://github.com/beneisnr/backend-gif-weather);

@@ -1,8 +1,8 @@
 {
-  "name": "starterpack-beneisnr",
+  "name": "gif-weather",
   "version": "1.0.0",
   "main": "src/index.js",
-  "repository": "https://github.com/dartmouth-cs52-19S/starterpack-beneisnr.git",
+  "repository": "https://github.com/beneisnr/gif-weather.git",
   "author": "Ben Eisner",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,7 @@
     "test": "eslint src/**.js",
     "build": "yarn clean; NODE_ENV=production webpack --colors",
     "clean": "rimraf dist",
-    "deploy": "yarn build; surge -p dist -d bensstarterpack.surge.sh; yarn clean"
+    "deploy": "yarn build; surge -p dist -d gif-weather.surge.sh; yarn clean"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -28,6 +28,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^4.6.0",
@@ -43,14 +44,11 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "jquery": "^3.4.0",
     "lodash.debounce": "^4.0.8",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-redux": "^7.0.2",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   }
 }

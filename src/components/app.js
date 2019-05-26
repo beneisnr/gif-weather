@@ -3,9 +3,8 @@ import {
   BrowserRouter as Router, Route, Switch,
 } from 'react-router-dom';
 import Nav from './nav';
-import Welcome from './welcome';
-import About from './about';
-import Test from './test';
+import Search from './search';
+import Weather from './weather';
 import FallBack from './fallback';
 
 const App = (props) => {
@@ -14,9 +13,8 @@ const App = (props) => {
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" component={Welcome} />
-          <Route path="/about" component={About} />
-          <Route exact path="/test/:id" component={Test} />
+          <Route exact path="/" component={Search} />
+          <Route exact path="/:query" component={Weather} />
           <Route component={FallBack} />
         </Switch>
       </div>
