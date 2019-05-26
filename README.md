@@ -1,2 +1,2 @@
 # Gif Weather
-* [server repo](https://github.com/beneisnr/backend-gif-weather);
+* [server repo](https://github.com/beneisnr/backend-gif-weather)

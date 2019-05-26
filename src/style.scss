@@ -1,6 +1,7 @@
+$black: rgb(0, 0, 0);
+
 body, html {
     font-family: "Roboto", sans-serif;
-    height: 100%;
 }
 
 * {
@@ -10,13 +11,51 @@ body, html {
 }
 
 a {
-  text-decoration: none;
+  color: inherit;
 }
 
-ul {
-  list-style-type: none;
+#nav {
+  position: absolute;
+
+  a {
+    text-decoration: none;
+  }
 }
 
-.active {
-  color: pink;
+#search, #weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#search {
+  input {
+    height: 50px;
+    width: 40vw;
+    min-width: 300px;
+    padding: 8px;
+    font-size: 1em;
+  }
+}
+
+#weather {
+  #weather-modal {
+    #weather-modal-currently {
+      .icon {}
+      .temp {}
+    }
+
+    #weather-modal-hourly {
+      .summary {}
+
+      .hourly-card {
+        .time {}
+
+        .temp {}
+      }
+    }
+  }
+  
 }

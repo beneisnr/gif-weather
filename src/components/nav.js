@@ -3,14 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const Nav = (props) => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink exact to="/">
-            🌤
-          </NavLink>
-        </li>
-      </ul>
+    <nav id="nav">
+      <NavLink exact to="/">
+        Gif Weather
+      </NavLink>
     </nav>
   );
 };

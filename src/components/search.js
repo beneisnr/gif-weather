@@ -9,12 +9,15 @@ function Search(props) {
   };
 
   return (
-    <div>
+    <div id="search">
+      <h1>Gif Weather</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={query}
           onChange={e => setQuery(e.target.value)}
+          placeholder="Search a location"
+          required
         />
       </form>
     </div>
