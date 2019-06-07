@@ -1,25 +1,11 @@
 $black: rgb(0, 0, 0);
-
-body, html {
-    font-family: "Roboto", sans-serif;
-}
+$white: rgb(255, 255, 255);
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-a {
-  color: inherit;
-}
-
-#nav {
-  position: absolute;
-
-  a {
-    text-decoration: none;
-  }
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 #search, #weather {
@@ -37,25 +23,24 @@ a {
     min-width: 300px;
     padding: 8px;
     font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid rgba( $black, .4 );
+  }
+
+  input:focus {
+    outline-color: rgba( $black, .1 );
   }
 }
 
 #weather {
-  #weather-modal {
-    #weather-modal-currently {
-      .icon {}
-      .temp {}
-    }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-    #weather-modal-hourly {
-      .summary {}
-
-      .hourly-card {
-        .time {}
-
-        .temp {}
-      }
-    }
-  }
-  
+#weather-modal {
+  background-color: rgba( $white, .7 );
+  border: 1px solid rgba( $white, .9 );
+  padding: 12px;
+  border-radius: 5px;
 }

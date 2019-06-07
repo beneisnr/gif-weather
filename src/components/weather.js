@@ -3,7 +3,7 @@ import axios from 'axios';
 import WeatherCard from './weatherCard';
 
 function Weather(props) {
-  const [data, setData] = useState({ location: '', weather: {}, gif: '' });
+  const [data, setData] = useState({ location: null, weather: {}, gif: null });
   const [error, setError] = useState('');
 
   useEffect(() => {
@@ -21,12 +21,10 @@ function Weather(props) {
   }, [props.match.params.query]);
 
   return (
-    <div id="weather">
-      {(!error && !data.weather.currently) && <div id="loading">Loading</div>}
+    <div id="weather" style={data.gif && { backgroundImage: `url(${data.gif})` }}>
+      {(!error && !data.weather.summary) && <div id="loading">Loading</div>}
       {error && <div id="error">Oops! {error}</div>}
-      {data.weather.currently
-        && <WeatherCard location={data.location} weather={data.weather} />
-      }
+      {data.weather.summary && <WeatherCard location={data.location} weather={data.weather} />}
     </div>
   );
 }
